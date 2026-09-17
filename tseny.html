@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Цены — МайДент</title>
+<style>
+  :root{--bg:#f4efe4;--dark:#1f4335;--dark2:#173226;--accent:#c0603a;--text:#232323;--muted:#6b6b63;--card:#ffffff;--line:#e3ddcc;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:"Georgia","Times New Roman",serif;background:var(--bg);color:var(--text);}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+  header{background:var(--bg);border-bottom:1px solid var(--line);}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;}
+  .logo{font-size:22px;font-weight:bold;}
+  .logo span{color:var(--accent);}
+  .nav-links{display:flex;gap:28px;font-size:15px;}
+  .nav-links a.active{font-weight:bold;}
+  .nav-right{display:flex;align-items:center;gap:20px;font-size:15px;}
+  .btn{background:var(--accent);color:#fff;padding:12px 22px;border-radius:30px;font-size:15px;display:inline-block;}
+  .btn.light{background:#fff;color:var(--dark2);}
+  .crumbs{font-size:13px;color:var(--muted);padding:18px 0 0;}
+  section{padding:36px 0;}
+  h1{font-size:36px;margin:14px 0 16px;}
+  .lede{color:var(--muted);max-width:640px;line-height:1.6;margin-bottom:24px;}
+
+  .note{display:flex;gap:10px;background:#e7ece5;border-radius:8px;padding:16px 20px;font-size:14px;color:var(--muted);margin-bottom:30px;line-height:1.6;}
+  .note .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:6px;flex-shrink:0;}
+
+  .tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px;}
+  .tab{padding:10px 18px;border-radius:20px;font-size:14px;border:1px solid var(--line);background:var(--card);}
+
+  details{border-bottom:1px solid var(--line);padding:18px 0;}
+  details summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+  details summary::-webkit-details-marker{display:none;}
+  details summary h3{margin:0 0 4px;font-size:18px;}
+  details summary span.sub{font-size:13px;color:var(--muted);font-weight:normal;display:block;}
+  details summary .icon{font-size:20px;color:var(--muted);}
+  details[open] summary .icon::before{content:"–";}
+  details:not([open]) summary .icon::before{content:"+";}
+
+  .price-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+  .price-row:last-child{border-bottom:none;}
+  .price-row b{font-weight:bold;}
+  .new-badge{background:var(--accent);color:#fff;font-size:10px;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;}
+
+  .cta-band{background:var(--dark2);color:#fff;border-radius:10px;padding:30px 34px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center;margin-top:40px;}
+  .cta-band h3{margin:0 0 4px;font-size:20px;}
+  .cta-band p{margin:0;color:#c8d6cd;font-size:14px;}
+
+  footer{border-top:1px solid var(--line);padding:40px 0 24px;margin-top:20px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px;font-size:14px;color:var(--muted);}
+  .footer-grid h5{color:var(--text);font-size:14px;margin:0 0 12px;}
+  .footer-grid div div{margin-bottom:8px;}
+  .copyright{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-top:30px;padding-top:16px;border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" style="text-decoration:none;"><div class="logo">Май<span>Дент</span></div></a>
+    <nav class="nav-links">
+      <a href="o-klinike.html">О клинике</a>
+      <a href="uslugi.html">Услуги</a>
+      <a class="active" href="tseny.html">Цены</a>
+      <a href="vrachi.html">Врачи</a>
+      <a href="kontakty.html">Контакты</a>
+    </nav>
+    <div class="nav-right">
+      <span>+7 (343) 28-700-28</span>
+      <a class="btn" href="kontakty.html">Записаться</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="crumbs"><a href="index.html">Главная</a> / Цены</div>
+
+  <section style="padding-bottom:0;">
+    <h1>Цены на услуги стоматологии Май Дент</h1>
+    <p class="lede">Полный прайс-лист клиники по всем направлениям. Итоговая стоимость лечения зависит от объёма работы и определяется врачом на консультации.</p>
+
+    <div class="note">
+      <div class="dot"></div>
+      <div>Ниже — структура прайс-листа по 9 категориям, как в действующем прейскуранте клиники. Цены ориентировочные и требуют сверки с актуальным прайсом Май Дент перед публикацией на сайте.</div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab">Общие пункты</div>
+      <div class="tab">Хирургия</div>
+      <div class="tab">Детская стоматология</div>
+      <div class="tab">Ортопедия</div>
+      <div class="tab">Ортодонтия</div>
+      <div class="tab">Рентгенодиагностика</div>
+      <div class="tab">Терапия и профилактика</div>
+      <div class="tab">Пародонтология</div>
+      <div class="tab">Отбеливание</div>
+      <div class="tab">Лазерное лечение LiteTouch</div>
+    </div>
+
+    <details open>
+      <summary><div><h3>Общие пункты</h3><span class="sub">Первичный приём, консультации, административные услуги</span></div><span class="icon"></span></summary>
+      <div class="price-row"><span>Первичная консультация врача-стоматолога</span><b>от 500 ₽</b></div>
+      <div class="price-row"><span>Повторная консультация врача-стоматолога</span><b>от 300 ₽</b></div>
+      <div class="price-row"><span>Составление плана лечения</span><b>от 500 ₽</b></div>
+      <div class="price-row"><span>Оформление медицинской документации / справки</span><b>от 300 ₽</b></div>
+    </details>
+
+    <details>
+      <summary><div><h3>Хирургия</h3><span class="sub">Удаление зубов, имплантация, костная пластика</span></div><span class="icon"></span></summary>
+      <div class="price-row"><span>Удаление зуба простое</span><b>от 2 500 ₽</b></div>
+      <div class="price-row"><span>Удаление зуба сложное / ретинированного</span><b>от 6 000 ₽</b></div>
+      <div class="price-row"><span>Имплантация зуба (импорт)</span><b>от 35 000 ₽</b></div>
+      <div class="price-row"><span>Костная пластика</span><b>от 15 000 ₽</b></div>
+    </details>
+
+    <details>
+      <summary><div><h3>Детская стоматология</h3><span class="sub">Лечение молочных и постоянных зубов у детей</span></div><span class="icon"></span></summary>
+      <div class="price-row"><span>Осмотр детского стоматолога</span><b>от 500 ₽</b></div>
+      <div class="price-row"><span>Лечение кариеса молочного зуба</span><b>от 3 000 ₽</b></div>
+      <div class="price-row"><span>Герметизация фиссур</span><b>от 1 500 ₽</b></div>
+    </details>
+
+    <details>
+      <summary><div><h3>Ортопедия (Протезирование)</h3><span class="sub">Коронки, протезы, имплантационное протезирование</span></div><span class="icon"></span></summary>
+      <div class="price-row"><span>Коронка металлокерамическая</span><b>от 12 000 ₽</b></div>
+      <div class="price-row"><span>Коронка на основе диоксида циркония</span><b>от 22 000 ₽</b></div>
+      <div class="price-row"><span>Съёмный протез</span><b>от 25 000 ₽</b></div>
+    </details>
+
+    <details>
+      <summary><div><h3>Ортодонтия</h3><span class="sub">Брекет-системы, элайнеры, ретенционный период</span></div><span class="icon"></span></summary>
+      <div class="price-row"><span>Установка брекет-системы (одна челюсть)</span><b>от 40 000 ₽</b></div>
+      <div class="price-row"><span>Элайнеры (курс лечения)</span><b>от 90 000 ₽</b></div>
+      <div class="price-row"><span>Ретенционная каппа</span><b>от 4 000 ₽</b></div>
+    </details>
+
+    <details>
+      <summary><div><h3>Рентгенологическая диагностика</h3><span class="sub">Снимки, компьютерная томография</span></div><span class="icon"></span></summary>
+      <div class="price-row"><span>Прицельный снимок зуба</span><b>от 300 ₽</b></div>
+      <div class="price-row"><span>Компьютерная томография (КТ) на KAVO OP 3D</span><b>от 2 500 ₽</b></div>
+      <div class="price-row"><span>Ортопантомограмма (панорамный снимок)</span><b>от 1 200 ₽</b></div>
+    </details>
+
+    <details>
+      <summary><div><h3>Терапевтическая стоматология и профилактика</h3><span class="sub">Лечение кариеса, эндодонтия, гигиена</span></div><span class="icon"></span></summary>
+      <div class="price-row"><span>Профессиональная гигиена полости рта</span><b>от 4 000 ₽</b></div>
+      <div class="price-row"><span>Лечение кариеса</span><b>от 4 500 ₽</b></div>
+      <div class="price-row"><span>Лечение пульпита / периодонтита под микроскопом</span><b>от 9 000 ₽</b></div>
+      <div class="price-row"><span>Эстетическая реставрация зуба</span><b>от 6 000 ₽</b></div>
+    </details>
+
+    <details>
+      <summary><div><h3>Пародонтология</h3><span class="sub">Лечение дёсен, аппарат Vector, плазмолифтинг</span></div><span class="icon"></span></summary>
+      <div class="price-row"><span>Лечение пародонтита аппаратом Vector® Paro</span><b>от 5 000 ₽</b></div>
+      <div class="price-row"><span>Плазмолифтинг дёсен (1 сеанс)</span><b>от 3 500 ₽</b></div>
+      <div class="price-row"><span>Обработка десневых карманов лазером LiteTouch<span class="new-badge">новинка</span></span><b>от 4 500 ₽</b></div>
+    </details>
+
+    <details>
+      <summary><div><h3>Отбеливание</h3><span class="sub">Профессиональное и домашнее отбеливание Philips Zoom</span></div><span class="icon"></span></summary>
+      <div class="price-row"><span>Отбеливание Philips Zoom (кабинетное)</span><b>от 15 000 ₽</b></div>
+      <div class="price-row"><span>Домашнее отбеливание с каппами</span><b>от 8 000 ₽</b></div>
+    </details>
+
+    <details>
+      <summary><div><h3>Лазерное лечение LiteTouch<span class="new-badge">новинка</span></h3><span class="sub">Безболезненное лечение лазером Er:YAG «лазер-в-наконечнике»</span></div><span class="icon"></span></summary>
+      <div class="price-row"><span>Лечение кариеса лазером (без анестезии)</span><b>от 5 000 ₽</b></div>
+      <div class="price-row"><span>Реконтурирование десны лазером (эстетика улыбки)</span><b>от 4 000 ₽</b></div>
+      <div class="price-row"><span>Обработка каналов лазером при эндодонтическом лечении</span><b>от 3 000 ₽</b></div>
+      <div class="price-row"><span>Обеззараживание импланта / лечение периимплантита</span><b>от 6 000 ₽</b></div>
+    </details>
+
+    <div class="cta-band">
+      <div>
+        <h3>Хотите узнать точную стоимость лечения?</h3>
+        <p>Запишитесь на консультацию — врач осмотрит зубы и составит план лечения с точными ценами.</p>
+      </div>
+      <a class="btn light" href="kontakty.html">Записаться на консультацию</a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">Май<span>Дент</span></div>
+        <p>ООО «МАЙ ДЕНТ»<br>620016, г. Екатеринбург,<br>пос. Совхозный, ул. Разливная, д. 50, кв. 110</p>
+        <p>ИНН 6678088557 · ОГРН 1176658110804<br>Лицензия Л041-01021-66/00351278</p>
+      </div>
+      <div><h5>Навигация</h5><div><a href="o-klinike.html">О клинике</a></div><div><a href="uslugi.html">Услуги</a></div><div><a href="tseny.html">Цены</a></div><div><a href="vrachi.html">Врачи</a></div><div><a href="kontakty.html">Контакты</a></div></div>
+      <div><h5>Направления</h5><div><a href="terapiya.html">Терапия</a></div><div><a href="uslugi.html">Хирургия</a></div><div><a href="uslugi.html">Протезирование</a></div><div><a href="uslugi.html">Ортодонтия</a></div><div><a href="uslugi.html">Детская стоматология</a></div></div>
+      <div><h5>Контакты</h5><div>+7 (343) 28-700-28</div><div>mydent.ekb@mail.ru</div><div>ул. Краснолесья, 30</div></div>
+    </div>
+    <div class="copyright"><span>© Май Дент, 2026</span><a href="#">Политика конфиденциальности</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
