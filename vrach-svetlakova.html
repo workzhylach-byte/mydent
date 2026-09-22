@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Светлакова Елена Николаевна — врач клиники МайДент</title>
+<meta name="description" content="Светлакова Елена Николаевна, Терапевт, пародонтолог, к.м.н. в стоматологии Май Дент. Комплексное лечение пародонтита, научная степень в области пародонтологии.">
+<style>
+:root{
+  --navy:#0f2438;
+  --navy-2:#15334f;
+  --blue:#1a73e8;
+  --teal:#12b3a8;
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --line:#e4e9f0;
+  --text:#1c2733;
+  --muted:#5c6b7a;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(15,36,56,.08);
+  --new:#ff7a3d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Manrope',-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Manrope',sans-serif;font-weight:800;line-height:1.15;margin:0 0 14px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+.kicker{display:inline-flex;align-items:center;gap:8px;color:var(--teal);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.kicker::before{content:"";width:22px;height:2px;background:var(--teal);display:inline-block}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:15px;border:2px solid transparent;cursor:pointer;transition:.2s}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:#0f5bc4}
+.btn-outline{border-color:rgba(255,255,255,.5);color:inherit}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:var(--navy-2)}
+.section{padding:76px 0}
+.section-tight{padding:48px 0}
+.section-alt{background:#fff}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.badge-new{background:var(--new);color:#fff;font-size:11px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;padding:4px 10px;border-radius:999px;display:inline-block}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:#ffffff;box-shadow:0 2px 14px rgba(15,36,56,.07);border-bottom:1px solid var(--line);color:var(--navy)}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:20px}
+.logo{font-size:22px;font-weight:800;letter-spacing:.01em;display:flex;align-items:center;gap:10px}
+.logo .dot{width:10px;height:10px;border-radius:50%;background:var(--teal)}
+nav.main{display:flex;gap:18px;flex:1;justify-content:center;font-size:14px;font-weight:600;flex-wrap:wrap}
+nav.main a{opacity:.85;padding:6px 0;border-bottom:2px solid transparent}
+nav.main a.active,nav.main a:hover{opacity:1;border-color:var(--teal)}
+.topbar-right{display:flex;align-items:center;gap:18px}
+.phone-link{font-weight:700;font-size:16px;white-space:nowrap}
+.burger{display:none;width:30px;height:30px;border:none;background:none;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;padding:0}
+.burger span{display:block;width:100%;height:2px;background:var(--navy);border-radius:2px;transition:.2s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.breadcrumbs{padding:18px 0;font-size:14px;color:var(--muted)}
+.breadcrumbs a{color:var(--blue)}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 55%,#0c3a4d 100%);color:#fff;padding:64px 0 0}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-bottom:56px}
+.hero .kicker{color:#8fd7d0}
+.hero h1{font-size:44px;max-width:640px}
+.hero p.lead{font-size:18px;color:#c6d3e0;max-width:520px;margin-bottom:28px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px}
+.hero-photo{aspect-ratio:4/3.2;border-radius:20px;background:linear-gradient(135deg,#1a4a63,#0f2438);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:#9fb3c4;font-size:14px;text-align:center;padding:20px;position:relative;overflow:hidden}
+.hero-photo::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(18,179,168,.25),transparent 60%)}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.12)}
+.stat-row .stat{padding:22px 10px;text-align:center;border-right:1px solid rgba(255,255,255,.12)}
+.stat-row .stat:last-child{border-right:none}
+.stat b{display:block;font-size:26px;color:var(--teal)}
+.stat span{font-size:13px;color:#aebccb}
+
+/* service cards */
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+.svc-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;position:relative}
+.svc-card.is-new{border-color:rgba(255,122,61,.5);background:linear-gradient(180deg,#fff8f4,#fff)}
+.svc-num{font-size:12px;color:var(--muted);font-weight:700}
+.svc-card h3{font-size:19px;margin:0}
+.svc-prices{list-style:none;margin:0;padding:0;font-size:14px;color:var(--muted)}
+.svc-prices li{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed var(--line)}
+.svc-prices li b{color:var(--text)}
+.svc-link{margin-top:auto;font-weight:700;color:var(--blue);display:inline-flex;align-items:center;gap:6px}
+.svc-link::after{content:"→";transition:.2s}
+.svc-card:hover .svc-link::after{transform:translateX(3px)}
+
+/* feature list */
+.feature-list{display:grid;gap:22px}
+.feature{display:flex;gap:16px;align-items:flex-start}
+.feature .ic{width:46px;height:46px;border-radius:12px;background:rgba(26,115,232,.1);color:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0}
+.feature h4{margin:0 0 4px;font-size:17px}
+.feature p{margin:0;color:var(--muted);font-size:15px}
+
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
+.photo-block{border-radius:var(--radius);background:linear-gradient(135deg,#dbe9f5,#eef3f8);border:1px solid var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;text-align:center;font-size:14px;padding:20px;min-height:220px}
+
+/* equipment */
+.equip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.equip-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.equip-card.laser{border:1px solid rgba(255,122,61,.5);background:linear-gradient(180deg,#fff8f4,#fff)}
+.equip-card h4{font-size:16px;margin-bottom:6px}
+.equip-card p{margin:0;color:var(--muted);font-size:14px}
+
+/* doctors */
+.doctor-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.doctor-photo{aspect-ratio:1/1;background:linear-gradient(135deg,#e7edf5,#cfe3ee);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+.doctor-body{padding:18px 18px 22px}
+.doctor-body .spec{color:var(--teal);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px;display:block}
+.doctor-body h4{font-size:17px;margin:0 0 6px}
+.doctor-body .exp{color:var(--muted);font-size:14px}
+.doctor-filters{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0}
+.chip{padding:8px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:14px;font-weight:600;color:var(--muted)}
+.chip.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* cta band */
+.cta-band{background:linear-gradient(120deg,var(--navy),#0c3a4d);color:#fff;border-radius:24px;padding:48px;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
+.cta-band h2{margin-bottom:10px}
+.cta-band p{color:#c6d3e0}
+
+/* reviews */
+.review-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.stars{color:#f5a623;letter-spacing:2px;margin-bottom:10px}
+.review-card p{color:var(--text);font-size:15px}
+.review-card b{display:block;margin-top:12px;color:var(--muted);font-weight:700;font-size:14px}
+
+/* faq */
+.faq-item{border-bottom:1px solid var(--line);padding:20px 0}
+.faq-item summary{cursor:pointer;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:22px;color:var(--blue);font-weight:400}
+.faq-item[open] summary::after{content:"–"}
+.faq-item p{margin:12px 0 0;color:var(--muted)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.step .n{font-size:28px;font-weight:800;color:rgba(26,115,232,.25);margin-bottom:10px}
+.step h4{font-size:16px;margin-bottom:6px}
+.step p{margin:0;color:var(--muted);font-size:14px}
+
+/* price table */
+.price-tabs{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0}
+.price-cat{margin-bottom:44px;scroll-margin-top:90px}
+.price-cat h3{font-size:22px;margin-bottom:4px}
+.price-cat .cat-desc{color:var(--muted);margin-bottom:16px;font-size:15px}
+table.price{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+table.price td{padding:14px 20px;border-bottom:1px solid var(--line);font-size:15px}
+table.price tr:last-child td{border-bottom:none}
+table.price td:last-child{text-align:right;font-weight:700;white-space:nowrap;color:var(--navy);min-width:130px}
+table.price td.price-tbd{color:var(--muted);font-weight:600;font-style:italic}
+table.price tr.laser td:first-child{display:flex;align-items:center;gap:10px}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px}
+.contact-item{display:flex;gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}
+.contact-item .ic{width:42px;height:42px;border-radius:10px;background:rgba(18,179,168,.12);color:var(--teal);display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0}
+.form-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.form-box input,.form-box textarea{width:100%;padding:13px 16px;border-radius:10px;border:1px solid var(--line);margin-bottom:14px;font-family:inherit;font-size:15px}
+.form-box label.check{display:flex;gap:8px;font-size:13px;color:var(--muted);align-items:flex-start;margin-bottom:16px}
+
+/* footer */
+footer.site{background:var(--navy);color:#c6d3e0;padding:56px 0 28px;margin-top:60px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.12)}
+footer.site h5{color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:14px}
+footer.site a{display:block;padding:5px 0;color:#c6d3e0}
+footer.site a:hover{color:#fff}
+.footer-bottom{padding-top:22px;font-size:13px;color:#8ea0b3;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* news */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
+.news-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.news-card .news-photo{aspect-ratio:16/10;background:linear-gradient(135deg,#e7edf5,#cfe3ee);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+.news-card .news-body{padding:20px}
+.news-meta{font-size:12px;color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.03em;margin-bottom:8px}
+.news-card h3{font-size:17px;margin-bottom:8px}
+.news-card p{color:var(--muted);font-size:14px;margin:0 0 14px}
+.news-card.featured{grid-column:span 3;display:grid;grid-template-columns:1fr 1fr}
+.news-card.featured .news-photo{aspect-ratio:auto;height:100%}
+.pagination{display:flex;gap:8px;justify-content:center;margin-top:36px}
+.pagination a{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:700;background:#fff}
+.pagination a.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* direction/service detail page */
+.dir-hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.pill-list{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+.pill-list .chip{background:#fff}
+.svc-line{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:14px;box-shadow:var(--shadow)}
+.svc-line h4{margin:0 0 4px;font-size:16px}
+.svc-line p{margin:0;color:var(--muted);font-size:14px}
+.svc-line .meta{text-align:right;white-space:nowrap;font-size:14px;color:var(--muted)}
+.svc-line .meta b{display:block;color:var(--navy);font-size:16px}
+.doctor-mini{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.doctor-mini .ph{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,#e7edf5,#cfe3ee);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted)}
+.doctor-mini h5{margin:0 0 4px;font-size:15px}
+.doctor-mini .spec{color:var(--teal);font-size:12px;font-weight:700;text-transform:uppercase;display:block;margin-bottom:4px}
+.doctor-mini p{margin:0;font-size:13px;color:var(--muted)}
+
+@media (max-width: 860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-photo{order:-1}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .g4,.equip-grid,.steps{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .g2,.about-grid,.contact-grid,.cta-band{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:32px}
+  .news-grid{grid-template-columns:1fr 1fr}
+  .news-card.featured{grid-column:span 2;grid-template-columns:1fr}
+  .dir-hero{grid-template-columns:1fr}
+  .burger{display:flex}
+  .phone-link{display:none}
+  header.site{position:sticky;top:0}
+  .topbar{flex-wrap:wrap}
+  nav.main{
+    order:5;flex-basis:100%;width:100%;
+    display:flex;flex-direction:column;gap:0;
+    max-height:0;overflow:hidden;
+    transition:max-height .25s ease;
+    border-top:1px solid rgba(15,36,56,0);
+  }
+  nav.main.open{max-height:520px;overflow-y:auto;border-top-color:var(--line);margin-top:10px}
+  nav.main a{padding:14px 4px;border-bottom:1px solid var(--line);font-size:16px;color:var(--navy)}
+  nav.main a.active,nav.main a:hover{border-bottom-color:var(--teal)}
+  .topbar-right .btn{padding:11px 18px;font-size:14px}
+}
+
+@media (max-width: 700px){
+  .section{padding:48px 0}
+  .services-grid{grid-template-columns:1fr}
+  .g4,.equip-grid,.steps,.g3{grid-template-columns:1fr}
+  .stat-row{grid-template-columns:repeat(2,1fr)}
+  .stat-row .stat{border-bottom:1px solid rgba(255,255,255,.12)}
+  .cta-band{padding:30px 22px;text-align:center}
+  .cta-band > div:last-child{text-align:center !important}
+  .doctor-filters{overflow-x:auto;flex-wrap:nowrap;padding-bottom:6px}
+  table.price td{padding:12px 14px;font-size:14px}
+  .price-tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:8px}
+  .price-tabs .chip{white-space:nowrap}
+  .footer-grid{grid-template-columns:1fr}
+  h1{font-size:28px !important}
+  .hero h1{font-size:26px}
+  .news-grid{grid-template-columns:1fr}
+  .news-card.featured{grid-column:span 1}
+  .svc-line{flex-direction:column;align-items:flex-start}
+  .svc-line .meta{text-align:left}
+}
+
+/* === доп. блоки: новая структура (квиз, вакансии, показания, врач, кейсы) === */
+.indic-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+.indic-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.indic-card h4{font-size:16px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.indic-card.yes h4{color:var(--teal)}
+.indic-card.no h4{color:#c94b4b}
+.indic-card ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px;display:grid;gap:8px}
+
+.vacancy-card{background:linear-gradient(135deg,var(--navy),#0c3a4d);color:#fff;border-radius:var(--radius);padding:26px 22px;display:flex;flex-direction:column;justify-content:center;gap:12px;box-shadow:var(--shadow)}
+.vacancy-card h3{font-size:19px;margin:0}
+.vacancy-card p{margin:0;font-size:14px;color:#c6d3e0}
+.vacancy-card .btn{align-self:flex-start;margin-top:4px}
+
+.quiz-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:stretch}
+.quiz-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px}
+.quiz-progress{height:6px;background:var(--line);border-radius:999px;overflow:hidden;margin-bottom:24px}
+.quiz-progress-bar{height:100%;background:var(--teal);border-radius:999px;transition:width .3s}
+.quiz-step{display:none}
+.quiz-step.active{display:block}
+.quiz-step h3{font-size:19px;margin-bottom:16px}
+.quiz-options{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quiz-options label{border:1px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer;font-size:14px;font-weight:600;transition:.15s;display:flex;align-items:center;gap:8px}
+.quiz-options label:hover{border-color:var(--teal)}
+.quiz-options input{accent-color:var(--teal)}
+.quiz-options label.picked{border-color:var(--teal);background:rgba(18,179,168,.08)}
+.quiz-step input[type=text],.quiz-step input[type=tel],.quiz-step select{width:100%;padding:13px 16px;border-radius:10px;border:1px solid var(--line);margin-bottom:14px;font-family:inherit;font-size:15px}
+.quiz-nav{display:flex;justify-content:space-between;margin-top:22px}
+.quiz-meta{text-align:center;color:var(--muted);font-size:13px;margin-top:14px}
+.quiz-side{background:linear-gradient(135deg,var(--navy),#0c3a4d);color:#fff;border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.quiz-side .kicker{color:#8fd7d0}
+.quiz-side p{color:#c6d3e0;margin:0;font-size:15px}
+@media (max-width:860px){.quiz-grid{grid-template-columns:1fr}.quiz-options{grid-template-columns:1fr}}
+
+.doctor-hero{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:center}
+.doctor-hero .doctor-photo{border-radius:var(--radius);aspect-ratio:3/3.4}
+.doctor-tags{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 22px}
+.doctor-tags .chip{background:#fff}
+
+.case-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.case-photos{display:grid;grid-template-columns:1fr 1fr}
+.case-photos .photo-block{border-radius:0;min-height:150px;aspect-ratio:1/1}
+.case-body{padding:18px 20px 22px}
+.case-body .doc-line{font-size:13px;color:var(--muted);margin-bottom:8px}
+.case-body .doc-line a{color:var(--blue);font-weight:700}
+.case-body p{margin:0 0 10px;font-size:14px;color:var(--text)}
+.case-body .src{font-size:12px;color:var(--muted)}
+.case-body .src a{color:var(--blue)}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="container topbar">
+    <a href="index.html" class="logo"><span class="dot"></span>МайДент</a>
+    <nav class="main" id="mainNav"><a href="index.html" class="">Главная</a>
+<a href="o-klinike.html" class="">О клинике</a>
+<a href="uslugi.html" class="">Услуги</a>
+<a href="tseny.html" class="">Цены</a>
+<a href="vrachi.html" class="active">Врачи</a>
+<a href="vakansii.html" class="">Вакансии</a>
+<a href="novosti.html" class="">Новости</a>
+<a href="kontakty.html" class="">Контакты</a></nav>
+    <div class="topbar-right">
+      <a class="phone-link" href="tel:+73432870028">+7 (343) 28-700-28</a>
+      <a class="btn btn-primary" href="kontakty.html">Записаться</a>
+      <button class="burger" id="burgerBtn" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('burgerBtn');
+  var nav = document.getElementById('mainNav');
+  if(btn && nav){
+    btn.addEventListener('click', function(){
+      btn.classList.toggle('open');
+      nav.classList.toggle('open');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        btn.classList.remove('open');
+        nav.classList.remove('open');
+      });
+    });
+  }
+})();
+</script>
+<div class="container breadcrumbs"><a href="index.html">Главная</a> / <a href="vrachi.html">Врачи</a> / Светлакова Елена Николаевна</div>
+<section class="section-tight">
+  <div class="container doctor-hero">
+    <div class="photo-block doctor-photo">фото — Светлакова Елена Николаевна</div>
+    <div>
+      <div class="kicker">Терапевт, пародонтолог, к.м.н.</div>
+      <h1 style="font-size:32px">Светлакова Елена Николаевна</h1>
+      <p class="muted">Опыт более 15 лет</p>
+      <p class="muted">Комплексное лечение пародонтита, научная степень в области пародонтологии.</p>
+      <div class="doctor-tags"><a href="parodontologiya.html" class="chip">Пародонтология</a></div>
+      <a class="btn btn-dark" href="kontakty.html">Записаться к врачу</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="kicker">Отзывы</div>
+    <h2>Что говорят пациенты</h2>
+    <div class="grid g2" style="margin-top:24px">
+      <div class="review-card"><div class="stars">★★★★★</div><p>Спасибо за внимательное отношение и понятное объяснение плана лечения — сразу видно, что врач заботится о результате, а не просто "отрабатывает приём".</p><b>Пациент клиники</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <div><h2>Записаться на приём к врачу «Светлакова Елена Николаевна»</h2><p>Позвоните или оставьте заявку — подберём удобное время визита.</p></div>
+      <div style="text-align:right"><a href="kontakty.html" class="btn btn-primary">Записаться на приём</a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:12px">МайДент</div>
+        <p style="max-width:280px;font-size:14px">ООО «МАЙ ДЕНТ»<br>620016, г. Екатеринбург, пос. Совхозный, ул. Разливная, д. 50, кв. 110</p>
+        <p style="font-size:13px;color:#8ea0b3">ИНН 6678088557 · ОГРН 1176658110804<br>Лицензия Л041-01021-66/00351278</p>
+      </div>
+      <div>
+        <h5>Навигация</h5>
+        <a href="o-klinike.html">О клинике</a>
+        <a href="uslugi.html">Услуги</a>
+        <a href="tseny.html">Цены</a>
+        <a href="vrachi.html">Врачи</a>
+        <a href="keysy.html">Кейсы</a>
+        <a href="vakansii.html">Вакансии</a>
+        <a href="novosti.html">Новости</a>
+        <a href="kontakty.html">Контакты</a>
+      </div>
+      <div>
+        <h5>Направления</h5>
+        <a href="terapiya.html">Терапия</a>
+        <a href="khirurgiya.html">Хирургия</a>
+        <a href="ortopediya.html">Протезирование</a>
+        <a href="ortodontiya.html">Ортодонтия</a>
+        <a href="detskaya.html">Детская стоматология</a>
+        <a href="parodontologiya.html">Пародонтология</a>
+        <a href="otbelivanie.html">Отбеливание</a>
+        <a href="litetouch.html">Лазерное лечение LiteTouch</a>
+      </div>
+      <div>
+        <h5>Контакты</h5>
+        <a href="tel:+73432870028">+7 (343) 28-700-28</a>
+        <a href="mailto:mydent.ekb@mail.ru">mydent.ekb@mail.ru</a>
+        <a href="kontakty.html">г. Екатеринбург, ул. Краснолесья, 30</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Май Дент, 2026</span>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
